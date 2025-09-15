@@ -40,7 +40,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@2.33.0
         with:
-          php-version: '8.3' # Results are the same across all versions, check only in the last stable version.
+          php-version: '8.2' # Results are the same across all versions, check only in the last stable version.
           coverage: none
         env:
           fail-fast: false
