@@ -50,7 +50,9 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<!-- Set the Text Domain. -->
-			<property name="text_domain" type="array" value="meetup-github-actions"/>
+			<property name="text_domain" type="array">
+				<element value="meetup-github-actions"/>
+			</property>
 		</properties>
 	</rule>
 
