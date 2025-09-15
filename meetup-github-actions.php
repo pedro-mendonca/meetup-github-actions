@@ -15,7 +15,7 @@
  * Version:           1.0.0
  * Requires at least: 5.3
  * Tested up to:      6.7
- * Requires PHP:      7.4
+ * Requires PHP:      8.3
  * Author:            Pedro Mendonça
  * Author URI:        https://profiles.wordpress.org/pedromendonca/
  * License:           GPL v2 or later
