@@ -40,7 +40,6 @@ define( 'MEETUP_GITHUB_ACTIONS_DIR_PATH', plugin_dir_path( __FILE__ ) );
 // Set the plugin file path.
 define( 'MEETUP_GITHUB_ACTIONS_FILE', plugin_basename( __FILE__ ) );
 
-
 // Include Composer autoload.
 require_once MEETUP_GITHUB_ACTIONS_DIR_PATH . 'vendor/autoload.php';
 
@@ -48,10 +47,8 @@ require_once MEETUP_GITHUB_ACTIONS_DIR_PATH . 'vendor/autoload.php';
  * Initialize the plugin.
  *
  * @since 1.0.0
- *
- * @return void
  */
-function meetup_github_actions_init() {
+function init() : void {
 	new Init();
 }
-add_action( 'plugins_loaded', __NAMESPACE__ . '\meetup_github_actions_init' );
+add_action( 'plugins_loaded', __NAMESPACE__ . '\init' );
