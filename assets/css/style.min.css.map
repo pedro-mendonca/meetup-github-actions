@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,kBACE,UAAW,CACX,iCAAkC,CAClC,yBACF,CAEA,gDACE,SACF","file":"style.min.css","sourcesContent":["/* CSS for My Plugin. */\nbody .my-plugin a {\n  color: #000;\n  -webkit-text-decoration: underline;\n  text-decoration: underline;\n}\n\nbody .my-plugin a:hover, body .my-plugin a:focus {\n  color: #f00;\n}\n"]}

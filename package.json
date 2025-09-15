@@ -1,0 +1,47 @@
+{
+	"requires": true,
+	"lockfileVersion": 1,
+	"name": "meetup-github-actions",
+	"version": "1.0.0",
+	"description": "My Plugin description.",
+	"author": "Pedro Mendonça",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"translation"
+	],
+	"homepage": "https://github.com/pedro-mendonca/meetup-github-actions#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pedro-mendonca/meetup-github-actions.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pedro-mendonca/meetup-github-actions/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.16.0",
+		"postcss-cli": "^11.0.1",
+		"postcss-preset-env": "^10.1.6",
+		"sass": "^1.87.0",
+		"uglify-js": "^3.19.3"
+	},
+	"scripts": {
+		"build": "npm run build:js && npm run build:css",
+		"build:css": "npm run compile:css && npm run lint:css:fix && npm run build:css:prefix && npm run build:css:minify",
+		"compile:css": "sass assets/css/ --color --no-source-map --verbose",
+		"build:css:prefix": "postcss assets/css/style.css --replace --verbose",
+		"build:css:minify": "postcss assets/css/style.css -o assets/css/style.min.css --map --use cssnano --verbose",
+		"build:js": "npm run build:js:scripts",
+		"build:js:scripts": "uglifyjs assets/js/scripts.js -o assets/js/scripts.min.js --compress drop_console=true --source-map base=assets/js,url=scripts.min.js.map",
+		"lint:css": "wp-scripts lint-style",
+		"lint:css:fix": "npm run lint:css -- --fix",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js:fix": "npm run lint:js -- --fix",
+		"lint:md:docs": "wp-scripts lint-md-docs",
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	},
+	"browserslist": [
+		"last 3 versions"
+	]
+}

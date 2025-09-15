@@ -1,0 +1,10 @@
+/* CSS for My Plugin. */
+body .my-plugin a {
+  color: #000;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+body .my-plugin a:hover, body .my-plugin a:focus {
+  color: #f00;
+}

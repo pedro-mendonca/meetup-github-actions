@@ -1,0 +1,20 @@
+/* CSS for My Plugin. */
+body {
+
+	.my-plugin {
+
+		// Links.
+		a {
+			color: #000;
+			text-decoration: underline;
+
+			&:hover,
+			&:focus {
+				color: #f00;
+			}
+
+		}
+
+	}
+
+}
