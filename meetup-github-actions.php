@@ -1,6 +1,6 @@
 <?php
 /**
- * Meetup Github Actions
+ * Meetup GitHub Actions
  *
  * @package           Meetup_Github_Actions
  * @link              https://github.com/pedro-mendonca/meetup-github-actions
@@ -9,9 +9,9 @@
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Meetup Github Actions
+ * Plugin Name:       Meetup GitHub Actions
  * Plugin URI:        https://wordpress.org/plugins/meetup-github-actions/
- * Description:       Meetup Github Actions description.
+ * Description:       Meetup GitHub Actions description.
  * Version:           1.0.0
  * Requires at least: 5.3
  * Tested up to:      6.7
