@@ -1,0 +1,12 @@
+{
+	"extends": [
+		"plugin:@wordpress/eslint-plugin/es5"
+	],
+	"globals": {
+		"console": true
+	},
+	"rules": {
+		"no-console": "off",
+		"no-alert": "off"
+	}
+}

@@ -1,0 +1,11 @@
+parameters:
+	level: 9
+	inferPrivatePropertyTypeFromConstructor: true
+	WPCompat:
+		pluginFile: meetup-github-actions.php
+	paths:
+		- meetup-github-actions.php
+		- includes/
+	bootstrapFiles:
+		# PHPStan bootstrap file.
+		- tests/phpstan/bootstrap.php
