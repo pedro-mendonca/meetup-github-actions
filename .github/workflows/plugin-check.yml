@@ -44,7 +44,7 @@ jobs:
     - name: Install Composer dependencies
       uses: ramsey/composer-install@v3
       with:
-        composer-options: "--no-dev --optimize-autoloader"
+        composer-options: "--no-dev"
 
     - name: Copy the plugin files to the plugin check folder, excluding the files on .distignore.
       run: rsync -rc --exclude-from="$GITHUB_WORKSPACE/.distignore" "$GITHUB_WORKSPACE/" meetup-github-actions/ --delete --delete-excluded
