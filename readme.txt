@@ -2,7 +2,7 @@
 Contributors: pedromendonca
 Tags: meetup, github actions
 Requires at least: 5.3
-Tested up to: 6.8
+Tested up to: 6.7
 Requires PHP: 8.2
 Stable tag: 1.0.0
 License: GPLv2

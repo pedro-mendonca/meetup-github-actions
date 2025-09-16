@@ -14,7 +14,7 @@
  * Description:       Meetup GitHub Actions description.
  * Version:           1.0.0
  * Requires at least: 5.3
- * Tested up to:      6.8
+ * Tested up to:      6.7
  * Requires PHP:      8.2
  * Author:            Pedro Mendonça
  * Author URI:        https://profiles.wordpress.org/pedromendonca/
