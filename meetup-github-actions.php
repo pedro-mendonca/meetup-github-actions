@@ -72,7 +72,7 @@ add_action( 'plugins_loaded', __NAMESPACE__ . '\init' );
  *
  * @since 2.0.0
  *
- * @return bool
+ * @return string
  */
 function vibe(): string {
 	return 'Good vibes only!';
