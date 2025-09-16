@@ -45,7 +45,7 @@ if ( ! class_exists( Init::class ) ) {
 		 *
 		 * @since 1.0.0
 		 *
-		 * @return void
+		 * @return bool
 		 */
 		public static function admin_menu() {
 
