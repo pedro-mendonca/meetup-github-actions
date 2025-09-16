@@ -24,7 +24,7 @@
  * Domain Path:       /languages
  */
 
-namespace Meetup_Github_Actions;
+ namespace Meetup_Github_Actions;
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) {
