@@ -9,7 +9,7 @@
  * @license           GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       Meetup GitHub Actions
+ * Plugin Name:       Meetup GitHub Actions for WordPress
  * Plugin URI:        https://wordpress.org/plugins/meetup-github-actions/
  * Description:       Meetup GitHub Actions description.
  * Version:           1.0.0
