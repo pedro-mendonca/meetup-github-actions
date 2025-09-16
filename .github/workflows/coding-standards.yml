@@ -76,7 +76,7 @@ jobs:
         run: composer config --absolute bin-dir >> $GITHUB_PATH
 
       - name: Log PHPCS debug information
-        run: composer run phpcs-i
+        run: composer phpcs-i
 
       - name: Run the PHP code sniffer
         continue-on-error: true
