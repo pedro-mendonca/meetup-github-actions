@@ -31,6 +31,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Check if get_plugin_data() function exists.
+if ( ! function_exists( 'get_plugin_data' ) ) {
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+}
+
+// Get plugin headers data.
+$meetup_github_actions_data = get_plugin_data( __FILE__, false, false );
+
+
+// Set the plugin version.
+if ( ! defined( 'MEETUP_GITHUB_ACTIONS_VERSION' ) ) {
+	define( 'MEETUP_GITHUB_ACTIONS_VERSION', $meetup_github_actions_data['Version'] );
+}
+
 // Set the plugin URL.
 define( 'MEETUP_GITHUB_ACTIONS_DIR_URL', plugin_dir_url( __FILE__ ) );
 
