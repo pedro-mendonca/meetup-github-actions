@@ -62,7 +62,7 @@ require_once MEETUP_GITHUB_ACTIONS_DIR_PATH . 'vendor/autoload.php';
  *
  * @since 1.0.0
  */
-function init() : void {
+function init(): void {
 	new Init();
 }
 add_action( 'plugins_loaded', __NAMESPACE__ . '\init' );
