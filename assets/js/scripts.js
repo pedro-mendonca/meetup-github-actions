@@ -10,7 +10,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
 	 * @since 1.0.0
 	 */
 	function doSomeMagic() {
-
 		console.log( 'Mixing the ingredients...' );
 		console.log( 'Casting the spell...' );
 
