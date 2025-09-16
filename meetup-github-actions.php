@@ -66,3 +66,14 @@ function init(): void {
 	new Init();
 }
 add_action( 'plugins_loaded', __NAMESPACE__ . '\init' );
+
+/**
+ * Test function for WordPress Coding Standards.
+ *
+ * @since 2.0.0
+ *
+ * @return bool
+ */
+function vibe(): string {
+	return 'Good vibes only!';
+}
