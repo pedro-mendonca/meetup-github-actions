@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! class_exists( __NAMESPACE__ . '\Init' ) ) {
+if ( ! class_exists( Init::class ) ) {
 
 	/**
 	 * Class Meetup_Github_Actions.
@@ -128,7 +128,7 @@ if ( ! class_exists( __NAMESPACE__ . '\Init' ) ) {
 				'meetup-github-actions-data',
 				array(
 					'user_login'    => wp_get_current_user()->user_login, // Current user login (username).
-					'do_some_magic' => apply_filters( 'meetup_github_actions_do_some_magic', true ),  // Wether or not to do some magic.
+					'do_some_magic' => apply_filters( 'meetup_github_actions_do_some_magic', true ),  // Whether or not to do some magic.
 				)
 			);
 		}
