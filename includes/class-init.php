@@ -45,7 +45,7 @@ if ( ! class_exists( Init::class ) ) {
 		 *
 		 * @since 1.0.0
 		 *
-		 * @return bool
+		 * @return void
 		 */
 		public static function admin_menu() {
 
@@ -55,10 +55,10 @@ if ( ! class_exists( Init::class ) ) {
 			</svg>';
 
 			$meetup = array(
-				'date'       => '2025-09-16',
-				'title' => esc_html__( 'GitHub Actions', 'github-actions' ),
-				'url'        => 'https://github.com/pedro-mendonca/meetup-github-actions',
-				'icon' => 'data:image/svg+xml;base64,' . base64_encode( $svg ) // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
+				'date'  => '2025-09-16',
+				'title' => esc_html__( 'GitHub Actions', 'meetup-github-actions' ),
+				'url'   => 'https://github.com/pedro-mendonca/meetup-github-actions',
+				'icon'  => 'data:image/svg+xml;base64,' . base64_encode( $svg ), // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
 			);
 
 			// Add the new menu item to the admin menu.
