@@ -73,10 +73,10 @@ jobs:
         run: composer dump-autoload --optimize
 
       - name: Make Composer packages available globally
-        run: echo "${PWD}/vendor/bin" >> $GITHUB_PATH
+        run: composer config --absolute bin-dir >> $GITHUB_PATH
 
       - name: Log PHPCS debug information
-        run: composer phpcs-i
+        run: composer run phpcs-i
 
       - name: Run the PHP code sniffer
         continue-on-error: true
@@ -113,6 +113,7 @@ jobs:
         run: |
           npm --version
           node --version
+
       - name: Install Dependencies
         run: npm ci
 
