@@ -108,6 +108,8 @@ if ( ! class_exists( Init::class ) ) {
 		 */
 		public static function register_plugin_scripts() {
 
+			return 'test';
+
 			// Check if SCRIPT_DEBUG is true.
 			$suffix = SCRIPT_DEBUG ? '' : '.min';
 
